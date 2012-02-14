@@ -1,0 +1,7 @@
+target
+activemq-data/
+.DS_Store
+.classpath
+.project
+.settings
+
