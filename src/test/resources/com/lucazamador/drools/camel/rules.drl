@@ -1,0 +1,10 @@
+package com.lucazamador.drools.camel
+
+import java.util.Date
+
+rule "check user login"
+when
+	$login : Login()
+then
+	channels["logins"].send("user " + $login.getUsername() + " logged at " + new Date());
+end
